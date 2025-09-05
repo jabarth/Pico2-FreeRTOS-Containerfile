@@ -224,7 +224,7 @@ EOF
 
 RUN mkdir build && \
     cd build && \
-    cmake -DPICOTOOL_EXECUTABLE=/usr/local/bin/picotool/picotool .. && \
+    cmake -DPICOTOOL_EXECUTABLE=/usr/local/bin/picotool .. && \
     make -j$(nproc)
 
 FROM scratch AS freertos-firmware-uf2
